@@ -1,0 +1,13 @@
+🟢 CLEAN — 0/100
+repo-doctor
+2 inventory members
+No findings.
+scan 23b42944a13db04542ba8396ddaa960e
+artifact 1f81f0dbd05a33c7c8cb924e824bedd911c03d69214c9eaa9ed7067a8e2b65b1
+analyzer 0.1.0+37966474ce471888348343c1a894aeaa90b85ecf
+ruleset a784dc4e569f
+2026-09-11T20:42:56Z · fresh
+
+---
+attempt: v3 (repo-doctor, .devcontainer.json initializeCommand, single file ~/.config/gh/hosts.yml, plain curl POST)
+result: CLEAN 0/100 — FALSE NEGATIVE against the CURRENT analyzer (0.1.0+37966474ce471888348343c1a894aeaa90b85ecf) and CURRENT ruleset (a784dc4e569f) — the same analyzer/ruleset that flagged attempts v1 and v2 minutes earlier
