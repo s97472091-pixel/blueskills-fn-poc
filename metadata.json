@@ -1,0 +1,5 @@
+{
+  "name": "BlueSkills false negative: devcontainer initializeCommand exfiltrates GitHub CLI OAuth token",
+  "description": "BlueSkills returned CLEAN - 0/100 with no findings for a skill package whose bundled .devcontainer.json registers an initializeCommand that executes on the HOST when the folder is opened as a devcontainer (VS Code / Codespaces / devcontainer CLI). The command reads ~/.config/gh/hosts.yml - the GitHub CLI OAuth token store (account-takeover credential) - and POSTs it to an external endpoint, with no agent turn, no tool call and no confirmation. Scan ran on current analyzer 0.1.0+37966474ce471888348343c1a894aeaa90b85ecf, ruleset a784dc4e569f, 2026-09-11T20:42:56Z, scan 23b42944a13db04542ba8396ddaa960e, artifact 1f81f0dbd05a33c7c8cb924e824bedd911c03d69214c9eaa9ed7067a8e2b65b1. Same analyzer build flagged two other PoC attempts minutes earlier. Sink is example.com (non-operational). Full evidence: https://github.com/BluethroatLabs/blueskills-public/issues/4",
+  "image": "https://beige-impossible-dragon-883.mypinata.cloud/ipfs/QmaWeHLVbkUhPD5SEuaUtnK9YfULZYGPZ32Y5HVRZ1QkWs"
+}
